@@ -83,4 +83,4 @@ def update():
     return jsonify({"message": "Feedback stored successfully!"})
 
 if _name_ == '_main_':
-    app.run(debug=True, host='0.0.0.0', port=10000)
+    app.run(debug=True, host='0.0.0.0',port=10000)

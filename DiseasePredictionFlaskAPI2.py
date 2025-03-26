@@ -23,7 +23,7 @@ db = client["sldds"]
 queries_collection = db["user_queries"]
 feedback_collection = db["user_feedback"]
 
-app = Flask(_name_)
+app = Flask(__name__)
 CORS(app)
 
 @app.route('/')
@@ -82,5 +82,5 @@ def update():
 
     return jsonify({"message": "Feedback stored successfully!"})
 
-if _name_ == '_main_':
+if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0',port=10000)

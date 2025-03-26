@@ -17,7 +17,7 @@ input_details = interpreter.get_input_details()
 output_details = interpreter.get_output_details()
 
 # Connect to MongoDB Atlas (update with your credentials)
-MONGO_URI = "mongodb+srv://DSHarman:harman.mongodb.ds@harmandiseaseprediction.mongodb.net/ai_medical_assistant?retryWrites=true&w=majority"
+MONGO_URI = "mongodb+srv://DSHarman:harman.mongodb.ds@harmandiseaseprediction.wbo3b.mongodb.net/ai_medical_assistant?retryWrites=true&w=majority"
 client = MongoClient(MONGO_URI)
 db = client["sldds"]
 queries_collection = db["user_queries"]
